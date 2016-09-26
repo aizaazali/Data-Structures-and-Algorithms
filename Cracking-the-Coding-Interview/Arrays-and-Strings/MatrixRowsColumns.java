@@ -3,11 +3,10 @@
 // Steps:
 // Create a matrix and enter the elements of a matrix
 // Create 2 arrays rows[] and columns[]
-// For every element '0' in an array, store row and column numbers in the respective arrays.
+// For every element '0' in an array, store boolean values for row and column numbers in the respective arrays.
 // for every row and column stored in row[] and column[], set all its elements to 0
 
 import java.util.*;
-
 
 public class MatrixRowsColumns {
 
@@ -20,9 +19,7 @@ public class MatrixRowsColumns {
 		int c = sc.nextInt();
 		int[][] a = new int[r][c];
 		boolean[] row = new boolean[a.length]; 
-		boolean[] column = new boolean[a[0].length];
-		System.out.println(row.length+" lengths "+column.length);
-		
+		boolean[] column = new boolean[a[0].length];		
 		int k=0;
 		for(int i=0;i<a.length;i++)
 		{
@@ -33,7 +30,7 @@ public class MatrixRowsColumns {
 			column[i]=false;
 		}
 		System.out.println("enter the elements of matrix:");
-		// entering the elements of a matrix and simultaneously storing row and column numbers in array
+		// entering the elements of a matrix and storing boolean values for row and column numbers in array
 		for(int i=0; i<a.length; i++)
 		{
 			for(int j=0; j<a[0].length; j++)
@@ -50,7 +47,7 @@ public class MatrixRowsColumns {
 		}
 		
 		System.out.println("elements of matrix are:");
-		// Printing the elements of a matrix 
+		// Printing the initial elements of a matrix 
 		for(int i=0; i<a.length; i++)
 		{
 			for(int j=0; j<a[0].length; j++)
@@ -60,8 +57,7 @@ public class MatrixRowsColumns {
 			}
 			System.out.println();
 		}
-
-
+		//Printing the final elements of a matrix after changing it to 0's
 		for (int i=0; i<a.length; i++)
 		{
 			for (int j=0; j<a[0].length; j++)
@@ -71,24 +67,9 @@ public class MatrixRowsColumns {
 					a[i][j]=0; 
 				}
 				System.out.print(a[i][j]+"  ");
-
 			}
-
 			System.out.println();
 		}
-		System.out.println("elements of matrix are:");
-		// Printing the elements of a matrix 
-		for(int i=0; i<a.length; i++)
-		{
-			for(int j=0; j<a[0].length; j++)
-			{
-				System.out.print(a[i][j]+"  ");
-
-			}
-		}
-
-
-		
 	}
 
 }

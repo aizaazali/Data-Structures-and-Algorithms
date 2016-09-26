@@ -1,5 +1,8 @@
 //Given two strings, write a method to decide if one is a permutation of the other.
 
+// A permutation means if the characters in one string are the same in another string
+// Examples: 'teach' and 'cheat'; 'abcda' and 'aabcd' but not 'abcd'
+
 import java.util.*;
 
 public class Permutation {

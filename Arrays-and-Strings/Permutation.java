@@ -37,9 +37,6 @@ public class Permutation {
 		else
 		{
 			System.out.println("invalid length");
-		}
-
-				
+		}				
 	}
 }
-Contact GitHub API Training Shop Blog About
